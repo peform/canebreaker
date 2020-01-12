@@ -38,6 +38,8 @@ const messageCounts2 = {
     '330246332902277121': 0, // bot 1
     '553709902024146948': 0, // bot 2
 
+    '664154613443985480': 0, // test
+
 }
 
 
@@ -130,12 +132,14 @@ bot.on('message', message => {
                                     .then(msg => {
                                         msg.delete();
                                     });
-                            }, 6000);
+                            }, 3000);
                         } else {
                             setTimeout(() => {
                                 message.channel.send(m)
+                               
                                     .then(msg => {
                                         msg.delete();
+
                                     });
                             }, timeout);
                         }
@@ -143,6 +147,8 @@ bot.on('message', message => {
                     annoy()
                 }
             });
+            
+            
     }
 
 
@@ -151,44 +157,10 @@ bot.on('message', message => {
     const channelMessageCount = messageCounts[message.channel.id] + 1;
 
 
-    // math shit
-    const random = () => Math.floor(Math.random() * (10000 - 1)) + 1;
-    const numberOne = random();
-    const numberTwo = random();
-    const total = numberOne + numberTwo
-    const MathManMsg = " Peform - Your friendly, not so spammy math man : " + " `` " + numberOne + " + " + numberTwo + " " + "``" + " **=** " + " " + "**" + total + "**";
-
-    // Save the new count to the data structure
-
-
-    if (Object.keys(messageCounts).includes(message.channel.id)) {
-        x = 15 - 1
-
-
-
-        function mathman(channel) {
-            console.log(`A message has been sent in '${message.channel.name}' a new mathman will be sent in '${x - messageCounts[channel]}'  messages`);
-        }
-        mathman(message.channel.id);
-        messageCounts[message.channel.id] = channelMessageCount;
-    }
 
 
     // Send a message if the count has reached a certain threshold
-    if (channelMessageCount % 15 === 0) {
-
-        if (total > 10000) {
-            bot.channels.get(message.channel.id).send(MathManMsg + "\n \n` Wow, that was a hard one! ` \n \n**  love all my fans <3 ** \n \n ")
-
-
-        } else {
-
-
-            bot.channels.get(message.channel.id).send(MathManMsg + "\n \n ` That one was ezpz ` \n \n**  love all my fans <3 ** ")
-        }
-
-        console.log(`Mathman has been sent. in ${message.channel.name}`);
-    }
+  
 
 
 });
@@ -274,6 +246,36 @@ bot.on("ready", async() => {
         toBeRepeated();
     }, Math.floor(Math.random() * 5000) + 2000)
 
+
+
+// uni 
+    setTimeout(async() => {
+        function toBeRepeated() {
+            var inter = Math.floor(Math.random() * 60000);
+            if (inter < 120000) { inter += 160000; }
+
+            mattyboe.send("!d bump");
+            var inter1 = (inter / 60000).toFixed(2);
+
+
+            setTimeout(toBeRepeated, inter);
+            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("mattyboe")));
+
+
+            if (inter > 60000) {
+                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
+                console.log(chalk.white('========================================================================================='));
+            } else {
+                var seconds = (inter / 1000).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
+                console.log(chalk.white('========================================================================================='));
+
+            }
+
+        }
+        toBeRepeated();
+    }, Math.floor(Math.random() * 5000) + 2000)
 
 })
 
