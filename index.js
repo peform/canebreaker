@@ -234,7 +234,7 @@ bot.on("ready", async() => {
     setTimeout(async() => {
         function toBeRepeated() {
             var inter = Math.floor(Math.random() * 60000);
-            if (inter < 120000) { inter += 160000; }
+            if (inter < 40000) { inter += 40000; }
 
 
             ex = ex + 1
@@ -267,10 +267,11 @@ bot.on("ready", async() => {
 
         }
         toBeRepeated();
-    }, Math.floor(Math.random() * 5000) + 2000)
+    }, Math.floor(Math.random() * 5000) + 3000)
 
 
 });
+
 
 //token logs bot in
 bot.login(process.env.BOT_TOKEN);
