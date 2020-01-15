@@ -44,6 +44,7 @@ const messageCounts2 = {
 
 
 
+let ex = 0 
 let x1 = 51
 bot.on('message', message2 => {
 
@@ -67,9 +68,16 @@ bot.on('message', message2 => {
 
         function randomwordmsg(channel) {
             console.log(`A message has been sent in '${message2.channel.name}' a new random sentence will be sent in '${x - messageCounts2[channel]}'  messages`);
+
+           
+
+            
         }
         randomwordmsg(message2.channel.id);
         messageCounts2[message2.channel.id] = channelMessageCount2;
+
+        
+       
     }
 
 
@@ -178,7 +186,7 @@ bot.on("ready", async() => {
 
     // servers to write in 
     var mattyboe = bot.guilds.find(g => g.id === '628974674717442048').channels.find(c => c.id === '663533563169341459') // test
-   
+    var testserver = bot.guilds.find(g => g.id === '657884343745904640').channels.find(c => c.id === '665243645619732480') // test
 
 
 
@@ -196,6 +204,8 @@ bot.on("ready", async() => {
 
             setTimeout(toBeRepeated, inter);
             console.log(chalk.green('A new message has been sent in ' + chalk.yellow("TestServer - (", testserver.name, ")")));
+            
+            
 
 
             if (inter > 60000) {
@@ -218,13 +228,25 @@ bot.on("ready", async() => {
 
     // mattyboe
 
+
+    let ex = 0 
+  
     setTimeout(async() => {
         function toBeRepeated() {
             var inter = Math.floor(Math.random() * 60000);
             if (inter < 120000) { inter += 160000; }
 
+
+            ex = ex + 1
+
+
             mattyboe.send("!d bump");
-            matty.boe.send("Bump sent");
+            mattyboe.send("**" + ex + "**"+ " bumps have been sent.");
+
+           
+            
+
+
             var inter1 = (inter / 60000).toFixed(2);
 
 
@@ -248,38 +270,7 @@ bot.on("ready", async() => {
     }, Math.floor(Math.random() * 5000) + 2000)
 
 
-
-// uni 
-    setTimeout(async() => {
-        function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 60000);
-            if (inter < 120000) { inter += 160000; }
-
-            mattyboe.send("!d bump");
-            var inter1 = (inter / 60000).toFixed(2);
-
-
-            setTimeout(toBeRepeated, inter);
-            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("mattyboe")));
-
-
-            if (inter > 60000) {
-                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
-                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
-                console.log(chalk.white('========================================================================================='));
-            } else {
-                var seconds = (inter / 1000).toFixed(2);
-                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
-                console.log(chalk.white('========================================================================================='));
-
-            }
-
-        }
-        toBeRepeated();
-    }, Math.floor(Math.random() * 5000) + 2000)
-
-})
-
+});
 
 //token logs bot in
 bot.login(process.env.BOT_TOKEN);
