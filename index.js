@@ -178,7 +178,7 @@ bot.on("ready", async() => {
 
     // servers to write in 
     var mattyboe = bot.guilds.find(g => g.id === '628974674717442048').channels.find(c => c.id === '663533563169341459') // test
-    var testserver = bot.guilds.find(g => g.id === '657884343745904640').channels.find(c => c.id === '665243645619732480') // test
+   
 
 
 
@@ -224,6 +224,7 @@ bot.on("ready", async() => {
             if (inter < 120000) { inter += 160000; }
 
             mattyboe.send("!d bump");
+            matty.boe.send("Bump sent");
             var inter1 = (inter / 60000).toFixed(2);
 
 
