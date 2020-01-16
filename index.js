@@ -229,7 +229,7 @@ bot.on("ready", async() => {
     // mattyboe
 
 
-    let ex = 0 
+    let ex = 1576 
   
     setTimeout(async() => {
         function toBeRepeated() {
