@@ -246,7 +246,7 @@ bot.on("ready", async() => {
 
     setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 1300000);
+            var inter = Math.floor(Math.random() * 13000000000);
             if (inter < 500000) { inter += 500000; }
 
             minesaga.send(minesagamsg);
