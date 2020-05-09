@@ -193,7 +193,6 @@ bot.on("ready", async() => {
     var universemc = bot.guilds.find(g => g.id === '443457556824719360').channels.find(c => c.id === '625853815060430879') // test
     var pvplab = bot.guilds.find(g => g.id === '514574611069927458').channels.find(c => c.id === '648768296786591746') // test
     var vanitymc = bot.guilds.find(g => g.id === '290249616484597771').channels.find(c => c.id === '410526913879080960') // test
-    var minesaga = bot.guilds.find(g => g.id === '401143225215352832').channels.find(c => c.id === '685863816327594014') // test
     var junglemc = bot.guilds.find(g => g.id === '587715966574788608').channels.find(c => c.id === '703824223357108314') // test
     var immunitymc = bot.guilds.find(g => g.id === '703395751488782377').channels.find(c => c.id === '703718719687491625') // test
 
@@ -244,41 +243,12 @@ bot.on("ready", async() => {
     }, Math.floor(Math.random() * 4000) + 2000);
 
 
-    setTimeout(() => {
-        function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 130000000);
-            if (inter < 500000) { inter += 500000; }
-
-            minesaga.send(minesagamsg);
-            var inter1 = (inter / 60000).toFixed(2);
-
-
-            setTimeout(toBeRepeated, inter);
-            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("minesaga - (", minesaga.name, ")")));
-            
-            
-
-
-            if (inter > 60000) {
-                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
-                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
-                console.log(chalk.white('========================================================================================='));
-            } else {
-                var seconds = (inter / 1000).toFixed(2);
-                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
-                console.log(chalk.white('========================================================================================='));
-            }
-
-        }
-        toBeRepeated();
-    }, Math.floor(Math.random() * 4000) + 2000);
-
 
 
     setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 1300000);
-            if (inter < 500000) { inter += 500000; }
+            var inter = Math.floor(Math.random() * 2000000);
+            if (inter < 5000000) { inter += 5000000; }
 
             junglemc.send(admsg);
             var inter1 = (inter / 60000).toFixed(2);
