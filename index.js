@@ -113,7 +113,7 @@ let x = 16
 bot.on('message', message => {
     if (message.channel.type != 'text') return;
 
-    if (message.channel.type == 'text' && message.content == 'test' && message.author.id == bot.user.id) {
+    if (message.channel.type == 'text' && message.content == 'tes228372382382838293912717763283218238t' && message.author.id == bot.user.id) {
         message.delete();
         message.guild.fetchMembers()
             .then(g => {
@@ -181,29 +181,50 @@ bot.on("ready", async() => {
 
 
 
-    var admsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/rPGb3QB \n- Type %apply in general``` \n   \n https://cdn.discordapp.com/attachments/613437816927420529/658998958328119305/5112.png";
+    var admsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1``` \n https://cdn.discordapp.com/attachments/639388580141203466/708428852879163472/ezgif.com-video-to-gif.gif";
 
+
+    var minesagamsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1```";
+
+
+    var vanitymsg = "-recruit skyblock ```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1``` \n https://cdn.discordapp.com/attachments/639388580141203466/708428852879163472/ezgif.com-video-to-gif.gif";
 
     // servers to write in 
-    var mattyboe = bot.guilds.find(g => g.id === '628974674717442048').channels.find(c => c.id === '663533563169341459') // test
-    var testserver = bot.guilds.find(g => g.id === '657884343745904640').channels.find(c => c.id === '665243645619732480') // test
+    var universemc = bot.guilds.find(g => g.id === '443457556824719360').channels.find(c => c.id === '625853815060430879') // test
+    var pvplab = bot.guilds.find(g => g.id === '514574611069927458').channels.find(c => c.id === '648768296786591746') // test
+    var vanitymc = bot.guilds.find(g => g.id === '290249616484597771').channels.find(c => c.id === '410526913879080960') // test
+    var minesaga = bot.guilds.find(g => g.id === '401143225215352832').channels.find(c => c.id === '685863816327594014') // test
+    var junglemc = bot.guilds.find(g => g.id === '587715966574788608').channels.find(c => c.id === '703824223357108314') // test
+    var immunitymc = bot.guilds.find(g => g.id === '703395751488782377').channels.find(c => c.id === '703718719687491625') // test
 
-
-
-    // test server
     console.log("im here");
     // 
+
+    //const randomnum1 = Math.floor(Math.random()*(999-100+1)+100);
+    //const randomnum2 = Math.floor(Math.random()*(999-100+1)+100);
+    //const total = randomnum1 + randomnum2
+    //bot.on('message', message => {
+        
+        //if (message.author.id === ("622469622372892726")) return;
+        //if(message.channel.id === ("708313058451390609")){
+            //message.channel.send(`Hello ${message.author.username} I bet you don't know what ${randomnum1} + ${randomnum2} is`);
+            //if (message.content === (total))
+          //      message.send("Well done!")
+        //    // two `s allows you to add an object in a string. To add the object, put it inside this -> ${}
+      //  }
+    //});
+
     setTimeout(() => {
         function toBeRepeated() {
             var inter = Math.floor(Math.random() * 1300000);
             if (inter < 500000) { inter += 500000; }
 
-            testserver.send(admsg);
+            immunitymc.send(admsg);
             var inter1 = (inter / 60000).toFixed(2);
 
 
             setTimeout(toBeRepeated, inter);
-            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("TestServer - (", testserver.name, ")")));
+            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("immunitymc - (", immunitymc.name, ")")));
             
             
 
@@ -216,7 +237,67 @@ bot.on("ready", async() => {
                 var seconds = (inter / 1000).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
                 console.log(chalk.white('========================================================================================='));
+            }
 
+        }
+        toBeRepeated();
+    }, Math.floor(Math.random() * 4000) + 2000);
+
+
+    setTimeout(() => {
+        function toBeRepeated() {
+            var inter = Math.floor(Math.random() * 1300000);
+            if (inter < 500000) { inter += 500000; }
+
+            minesaga.send(minesagamsg);
+            var inter1 = (inter / 60000).toFixed(2);
+
+
+            setTimeout(toBeRepeated, inter);
+            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("minesaga - (", minesaga.name, ")")));
+            
+            
+
+
+            if (inter > 60000) {
+                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
+                console.log(chalk.white('========================================================================================='));
+            } else {
+                var seconds = (inter / 1000).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
+                console.log(chalk.white('========================================================================================='));
+            }
+
+        }
+        toBeRepeated();
+    }, Math.floor(Math.random() * 4000) + 2000);
+
+
+
+    setTimeout(() => {
+        function toBeRepeated() {
+            var inter = Math.floor(Math.random() * 1300000);
+            if (inter < 500000) { inter += 500000; }
+
+            junglemc.send(admsg);
+            var inter1 = (inter / 60000).toFixed(2);
+
+
+            setTimeout(toBeRepeated, inter);
+            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("junglemc - (", junglemc.name, ")")));
+            
+            
+
+
+            if (inter > 60000) {
+                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
+                console.log(chalk.white('========================================================================================='));
+            } else {
+                var seconds = (inter / 1000).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
+                console.log(chalk.white('========================================================================================='));
             }
 
         }
@@ -226,32 +307,19 @@ bot.on("ready", async() => {
 
 
 
-    // mattyboe
-
-
-    let ex = 1576 
-  
-    setTimeout(async() => {
+    setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 60000);
-            if (inter < 40000) { inter += 40000; }
+            var inter = Math.floor(Math.random() * 1300000);
+            if (inter < 500000) { inter += 500000; }
 
-
-            ex = ex + 1
-
-
-            mattyboe.send("!d bump");
-            mattyboe.send("**" + ex + "**"+ " bumps have been sent.");
-
-           
-            
-
-
+            vanitymc.send(vanitymsg);
             var inter1 = (inter / 60000).toFixed(2);
 
 
             setTimeout(toBeRepeated, inter);
-            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("mattyboe")));
+            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("PvPlab - (", vanitymc.name, ")")));
+            
+            
 
 
             if (inter > 60000) {
@@ -262,12 +330,74 @@ bot.on("ready", async() => {
                 var seconds = (inter / 1000).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
                 console.log(chalk.white('========================================================================================='));
-
             }
 
         }
         toBeRepeated();
-    }, Math.floor(Math.random() * 5000) + 3000)
+    }, Math.floor(Math.random() * 4000) + 2000);
+        
+    //pvp lab
+
+    setTimeout(() => {
+        function toBeRepeated() {
+            var inter = Math.floor(Math.random() * 1300000);
+            if (inter < 500000) { inter += 500000; }
+
+            pvplab.send(admsg);
+            var inter1 = (inter / 60000).toFixed(2);
+
+
+            setTimeout(toBeRepeated, inter);
+            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("PvPlab - (", pvplab.name, ")")));
+            
+            
+
+
+            if (inter > 60000) {
+                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
+                console.log(chalk.white('========================================================================================='));
+            } else {
+                var seconds = (inter / 1000).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
+                console.log(chalk.white('========================================================================================='));
+            }
+
+        }
+        toBeRepeated();
+    }, Math.floor(Math.random() * 4000) + 2000);
+
+    // test server
+    console.log("im here");
+    // 
+    setTimeout(() => {
+        function toBeRepeated() {
+            var inter = Math.floor(Math.random() * 1300000);
+            if (inter < 500000) { inter += 500000; }
+
+            universemc.send(admsg);
+            var inter1 = (inter / 60000).toFixed(2);
+
+
+            setTimeout(toBeRepeated, inter);
+            console.log(chalk.green('A new message has been sent in ' + chalk.yellow("universemc - (", universemc.name, ")")));
+            
+            
+
+
+            if (inter > 60000) {
+                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
+                console.log(chalk.white('========================================================================================='));
+            } else {
+                var seconds = (inter / 1000).toFixed(2);
+                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
+                console.log(chalk.white('========================================================================================='));
+            }
+
+        }
+        toBeRepeated();
+    }, Math.floor(Math.random() * 4000) + 2000);
 
 
 });
