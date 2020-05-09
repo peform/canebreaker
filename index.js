@@ -215,7 +215,7 @@ bot.on("ready", async() => {
 
     setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 1300000);
+            let inter = Math.floor(Math.random() * 1300000);
             if (inter < 500000) { inter += 500000; }
 
             immunitymc.send(admsg);
@@ -229,11 +229,11 @@ bot.on("ready", async() => {
 
 
             if (inter > 60000) {
-                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                let minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
                 console.log(chalk.white('========================================================================================='));
             } else {
-                var seconds = (inter / 1000).toFixed(2);
+                let seconds = (inter / 1000).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
                 console.log(chalk.white('========================================================================================='));
             }
@@ -247,7 +247,7 @@ bot.on("ready", async() => {
 
     setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 2000000);
+            let inter = Math.floor(Math.random() * 2000000);
             if (inter < 5000000) { inter += 5000000; }
 
             junglemc.send(admsg);
@@ -261,11 +261,11 @@ bot.on("ready", async() => {
 
 
             if (inter > 60000) {
-                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                let minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
                 console.log(chalk.white('========================================================================================='));
             } else {
-                var seconds = (inter / 1000).toFixed(2);
+                let seconds = (inter / 1000).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
                 console.log(chalk.white('========================================================================================='));
             }
@@ -279,7 +279,7 @@ bot.on("ready", async() => {
 
     setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 1300000);
+            let inter = Math.floor(Math.random() * 1300000);
             if (inter < 500000) { inter += 500000; }
 
             vanitymc.send(vanitymsg);
@@ -293,11 +293,11 @@ bot.on("ready", async() => {
 
 
             if (inter > 60000) {
-                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                let minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
                 console.log(chalk.white('========================================================================================='));
             } else {
-                var seconds = (inter / 1000).toFixed(2);
+                let seconds = (inter / 1000).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
                 console.log(chalk.white('========================================================================================='));
             }
@@ -305,12 +305,13 @@ bot.on("ready", async() => {
         }
         toBeRepeated();
     }, Math.floor(Math.random() * 4000) + 2000);
+
         
     //pvp lab
 
     setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 1300000);
+            let inter = Math.floor(Math.random() * 1300000);
             if (inter < 500000) { inter += 500000; }
 
             pvplab.send(admsg);
@@ -324,11 +325,11 @@ bot.on("ready", async() => {
 
 
             if (inter > 60000) {
-                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                let minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
                 console.log(chalk.white('========================================================================================='));
             } else {
-                var seconds = (inter / 1000).toFixed(2);
+                let seconds = (inter / 1000).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
                 console.log(chalk.white('========================================================================================='));
             }
@@ -342,7 +343,7 @@ bot.on("ready", async() => {
     // 
     setTimeout(() => {
         function toBeRepeated() {
-            var inter = Math.floor(Math.random() * 1300000);
+            let inter = Math.floor(Math.random() * 1300000);
             if (inter < 500000) { inter += 500000; }
 
             universemc.send(admsg);
@@ -353,14 +354,14 @@ bot.on("ready", async() => {
             console.log(chalk.green('A new message has been sent in ' + chalk.yellow("universemc - (", universemc.name, ")")));
             
             
-
+            
 
             if (inter > 60000) {
-                var minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
+                let minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
                 console.log(chalk.white('========================================================================================='));
             } else {
-                var seconds = (inter / 1000).toFixed(2);
+                let seconds = (inter / 1000).toFixed(2);
                 console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
                 console.log(chalk.white('========================================================================================='));
             }
