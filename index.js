@@ -1,112 +1,122 @@
-    const Discord = require("discord.js");
+var channels = [];
 
-    const promisify = require('util').promisify;
+const min = 180000;
+const max = 600000; 
 
+const message_min = 10000;
+const message_max = 10050;
 
-    const bot = new Discord.Client({
-        disableEveryone: true
-    });
-    bot.wait = promisify(setTimeout);
-    const chalk = require('chalk');
+function registerChannel(guildId, channelId, message) {
+	channels.push({"guildId": guildId, "channelId": channelId, "message": message});
+	console.log(`channel with Id '${channelId}' in guild '${guildId}' is awaiting registration`);
+}
 
-    const min = 30000; // Minimum Value
-    const max = 180000; // Maximum Value
+const Discord = require("discord.js");
 
-
-
-
-
-    const guildsAndChannels = [
-        ["443457556824719360", "625853815060430879"], //Universemc
-        ["707049826470199427", "707050453728493661"], //Mynetale
-        ["703395751488782377", "703718719687491625"], //Immunity
-        ["587715966574788608", "703824223357108314"], //JungleMC
-        ["514574611069927458", "648768296786591746"], //pvplab
-        ["685749547120459837", "699352212421214229"], //tornadoMC
-        ["692809364314128394", "692818404620501053"], //ChaosCraft
-    ];
-        var admsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1``` \n https://cdn.discordapp.com/attachments/639388580141203466/708428852879163472/ezgif.com-video-to-gif.gif";
+const promisify = require('util').promisify;
 
 
-        var minesagamsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1```";
+const bot = new Discord.Client({
+    disableEveryone: true
+});
+bot.wait = promisify(setTimeout);
+const chalk = require('chalk');
 
 
-        var vanitymsg = "-recruit skyblock | Facebook | - Experienced leaders - Over $1100 Paypal won - Been an island since 2018  | - Must be over 13 - Must have schematica - Must have basic skyblock knowledge | https://discord.gg/x7uJaG2";
+var admsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1``` \n https://cdn.discordapp.com/attachments/639388580141203466/708428852879163472/ezgif.com-video-to-gif.gif";
 
 
+registerChannel("708313058451390605", "709421767512424469", admsg); // test
+registerChannel("443457556824719360", "625853815060430879", admsg); // universemc
+registerChannel("707049826470199427", "707050453728493661", admsg); // Mynetale
+registerChannel("703395751488782377", "703718719687491625", admsg); // Immunity
+registerChannel("587715966574788608", "703824223357108314", admsg); // JungleMC
+registerChannel("514574611069927458", "648768296786591746", admsg); // pvplab
+registerChannel("685749547120459837", "699352212421214229", admsg); // tornadoMC
+registerChannel("692809364314128394", "692818404620501053", admsg); // ChaosCraft
 
 
-    bot.on("ready", async () => {
-        console.log("I am running")
-        
-        var channels = []
-        
-        guildsAndChannels.forEach(x => {
-            let guild = bot.guilds.find(g => g.id === x[0]);
-            let channel = guild.channels.find(c => c.id === x[1]);
-            channels.push(channel);
-            console.log(`Added channel ${channel.name} from guild ${guild.name}`);
-        });
+bot.on("ready", async () => {
+	console.log("I am running")
+	
+	channels.forEach(x => {
+		let guild = bot.guilds.find(g => g.id === x.guildId);
+		if (!guild) {
+			console.error(`There is no guild with Id '${x.guildId}'`);
+		} else {
+			let channel = guild.channels.find(c => c.id === x.channelId);
+			if (!channel) {
+				console.error(`There is no channel with Id '${x.channelId}' in guild '${guild.name}'`);
+			} else if (channel.type != "text") {
+				console.error(`Channel '${channel.name}' in guild '${guild.name}' is not a text channel, and was not registered`);
+			} else {
+				x.channel = channel;
+				channel.send(x.message);
+				loopChannel(channel, x.message);
+				console.log(`Registered channel '${channel.name}' in guild '${guild.name}'`)
+			}
+		}
+	});
 
-        function loop() {
+	function loopChannel(channel, message) {
+		let rndm;
+		if (channel.rateLimitPerUser > (min / 1000)) {
+			let rateLimitInMs = channel.rateLimitPerUser * 1000;
+			console.log(rateLimitInMs);
 
-            let rndm = Math.floor(Math.random() * (max - min) + min);
-            //console.log("Looping (time: " + rndm.toString() + " ms");
-            inter = rndm;
-            if (inter > 60000) {
-                let minutes = ((Math.floor(inter / 60000)) + (inter % 60000 / 100000)).toFixed(2);
-                console.log(chalk.blue("New message will be sent in " + chalk.yellow(minutes) + (" minutes")));
-                console.log(chalk.white('========================================================================================='));
-            } else {
-                let seconds = (inter / 1000).toFixed(2);
-                console.log(chalk.blue("New message will be sent in " + seconds + chalk.blue(" seconds")));
-                console.log(chalk.white('========================================================================================='));
-            }
-        
+			let nmin = min + rateLimitInMs;
+			let nmax = max + rateLimitInMs;
 
+			rndm = Math.floor((Math.random() * (nmax - nmin) + nmin) / 1000);
+		} else {
+			rndm = Math.floor((Math.random() * (max - min) + min) / 1000);
+		}
 
+		let rndmText = rndm.toString();
 
-            
-            setTimeout(() => {
-                channels.forEach(message => {
-                    message.fetchMessages({ limit: 1 })
-                    .then(messages => {
-                        console.log(chalk.yellow(`Atempting to send message in ${messages.first().guild.name}`));
-                        console.log(chalk.white('========================================================================================='));
-                        if(messages.first().author.id != bot.user.id) {
-                            // c.send(`<@${messages.first().author.id}> \`${messages.first().content}\``)
-                            message.send(admsg)
+		console.log(`Loop for channel '${channel.name}' started for ${rndmText} seconds`);
 
-                            Math.floor(Math.random() * (max - min) + min);
-                            console.log(chalk.green(`Successfully sent message in ${messages.first().guild.name}`));
-                            console.log(chalk.white('========================================================================================='));
-                        } else {
-                            console.log(chalk.red(`Bot was the last sender, did not send message in ${messages.first().guild.name}`));
-                            console.log(chalk.white('========================================================================================='));
-                        }
-                    })
-                    .catch(console.error);
+		setTimeout(() => {
+			channel.send(message)
+					.then(msg => console.log(`Successfully sent '${msg}' in channel '${channel.name}' in guild '${channel.guild.name}'`))
+					.catch(err => {
+						console.error(`Failed to send '${msg}' in channel '${channel.name}' in guild '${channel.guild.name}'`);
+						console.error(`Error: '${err}'`);
+					});
+			console.log(`Loop for channel '${channel.name}' ended after ${rndmText} seconds`);
+					
+			loopChannel(channel, message);			
+		}, rndm * 1000);
+	}
+});
 
-                    
-                    
-                    
-                    //c.send(message)
-                });
-                console.log("Finished loop");
-                loop();
-            }, rndm);
-        }
-        loop();
-    });
+bot.on("message", async message => {
+	if (message.channel.rateLimitPerUser != 0) return;
 
-                
+	if (message.author.id == bot.user.id) return;
+
+	let messageText = channels.find(x => x.guildId == message.guild.id && x.channelId == message.channel.id);
+
+	if (!messageText) return;
+
+	messageText = messageText.message;
+
+	let rndm = Math.floor((Math.random() * (message_max - message_min) + message_min) / 1000);
+	let rndmText = rndm.toString();
+
+	console.log(`Message sent in channel '${message.channel.name}', started for ${rndmText} seconds`);
 
 
-
-
-
-
-
+	setTimeout(() => {
+		message.channel.send(messageText)
+			.then(msg => console.log(`Successfully sent '${msg}' in channel '${message.channel.name}' in guild '${message.channel.guild.name}'`))
+			.catch(err => {
+				console.error(`Failed to send '${msg}' in channel '${message.channel.name}' in guild '${message.channel.guild.name}'`);
+				console.error(`Error: '${err}'`);
+			});
+		console.log(`Message sent in channel '${message.channel.name}' ended after ${rndmText} seconds`);
+	}, rndm * 1000);
+});
 
 //token logs bot in
 bot.login(process.env.BOT_TOKEN);
