@@ -23,6 +23,7 @@
         ["587715966574788608", "703824223357108314"], //JungleMC
         ["514574611069927458", "648768296786591746"], //pvplab
         ["685749547120459837", "699352212421214229"], //tornadoMC
+        ["692809364314128394", "692818404620501053"], //ChaosCraft
     ];
         var admsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1``` \n https://cdn.discordapp.com/attachments/639388580141203466/708428852879163472/ezgif.com-video-to-gif.gif";
 
