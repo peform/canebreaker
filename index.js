@@ -107,10 +107,8 @@
 
 
 
-
-    //token logs bot in
-    bot.login("NjIyNDY5NjIyMzcyODkyNzI2.Xpi8-g.VijdSqNOureynPRndDGiSB-uo98");
-
+//token logs bot in
+bot.login(process.env.BOT_TOKEN);
 
 
 
