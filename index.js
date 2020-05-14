@@ -1,6 +1,6 @@
 var channels = [];
 
-const min = 180000;
+const min = 240000;
 const max = 600000; 
 
 const message_min = 60000;
