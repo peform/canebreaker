@@ -3,8 +3,8 @@ var channels = [];
 const min = 180000;
 const max = 600000; 
 
-const message_min = 10000;
-const message_max = 10050;
+const message_min = 60000;
+const message_max = 100000;
 
 function registerChannel(guildId, channelId, message) {
 	channels.push({"guildId": guildId, "channelId": channelId, "message": message});
