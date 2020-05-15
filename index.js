@@ -4,7 +4,7 @@ const min = 240000;
 const max = 600000; 
 
 const message_min = 60000;
-const message_max = 100000;
+const message_max = 130000;
 
 function registerChannel(guildId, channelId, message) {
 	channels.push({"guildId": guildId, "channelId": channelId, "message": message});
@@ -34,6 +34,7 @@ registerChannel("587715966574788608", "703824223357108314", admsg); // JungleMC
 registerChannel("514574611069927458", "648768296786591746", admsg); // pvplab
 registerChannel("685749547120459837", "699352212421214229", admsg); // tornadoMC
 registerChannel("692809364314128394", "692818404620501053", admsg); // ChaosCraft
+registerChannel("462797691995422731", "499956130462826516", admsg); // Neverendingpvp
 
 
 bot.on("ready", async () => {
