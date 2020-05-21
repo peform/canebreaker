@@ -39,7 +39,6 @@ registerChannel("696757944078958612", "697372571644985454", admsg); // octalepvp
 registerChannel("703406504119763016", "712091562598989941", admsg); // Starcade
 registerChannel("704886894864891934", "704903665445765171", admsg); // Atlantismc
 registerChannel("707049826470199427", "712183709411049492", admsg); // Mynetale
-registerChannel("290249616484597771", "410526913879080960", advanity); // VanityMC
 
 
 bot.on("ready", async () => {
