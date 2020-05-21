@@ -24,7 +24,7 @@ const chalk = require('chalk');
 
 
 var admsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ Who are we?❖**__ ```cs\n # Facebook is a well organized team of highly educated individuals that have won multiple maps of skyblock. We are testing new waters on high paypal reward servers and are recruiting now! ``` \n - __**❖What we offer❖**__ ```fix\n #1 High Placements \n #2 Active Leadership \n #3 Experienced players \n #4 Classified and strategic plays that guarentee us wins every map we play``` \n - __**❖Requirements❖**__ ```xl\n 'Must be atleast 13 years old`\n `Must have basic knowledge of skyblock` \n `Must be able to work in a team` ```\n  - __**❖How to apply❖**__ ```diff\n- Join our discord: https://discord.gg/vbsUamx \n- Type %apply in general``` \n **❖Maps we have won❖** \n```diff\n! UniverseMC x6 \n! MCwars (2nd) x2 \n! VanityMC (3rd) x1 \n! Minesega (1st) x1``` \n https://cdn.discordapp.com/attachments/639388580141203466/708428852879163472/ezgif.com-video-to-gif.gif";
-
+var advanity = "-recruit SkyBlock | :crossed_swords: SkyNerds Recruitment :crossed_swords: | - - :small_blue_diamond: Experienced and Active Team, - - :small_blue_diamond: Good Teamwork. - - :small_blue_diamond: Active Members. - - :small_blue_diamond: No Toxicity. - - :small_blue_diamond: 24/7 VPS. - - :small_blue_diamond: Custom Discord Bots. - - :small_blue_diamond: Payouts Split Fairly. - - :small_blue_diamond: Custom Clients | - - :small_orange_diamond: Must be over 13 years old. - - :small_orange_diamond: Must have a Microphone. - - :small_orange_diamond: Must be able to play 2-3+ hours per day. - - :small_orange_diamond: Must have past SkyBlock experience. - - :small_orange_diamond: Must have Schematica. - - :small_orange_diamond: Must have good teamwork. | https://discord.gg/KWBh9MN"
 
 registerChannel("708313058451390605", "709421767512424469", admsg); // test
 registerChannel("443457556824719360", "625853815060430879", admsg); // universemc
@@ -35,6 +35,11 @@ registerChannel("514574611069927458", "648768296786591746", admsg); // pvplab
 registerChannel("685749547120459837", "699352212421214229", admsg); // tornadoMC
 registerChannel("692809364314128394", "692818404620501053", admsg); // ChaosCraft
 registerChannel("462797691995422731", "499956130462826516", admsg); // Neverendingpvp
+registerChannel("696757944078958612", "697372571644985454", admsg); // octalepvp
+registerChannel("703406504119763016", "712091562598989941", admsg); // Starcade
+registerChannel("704886894864891934", "704903665445765171", admsg); // Atlantismc
+registerChannel("707049826470199427", "712183709411049492", admsg); // Mynetale
+registerChannel("290249616484597771", "410526913879080960", advanity); // VanityMC
 
 
 bot.on("ready", async () => {
