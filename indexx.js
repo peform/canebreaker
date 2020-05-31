@@ -27,29 +27,7 @@ var admsg = "```md\n# [🥨] Facebook Mass Recruitment [🥨] ``` \n -  __**❖ 
 var advanity = "-recruit SkyBlock | :crossed_swords: SkyNerds Recruitment :crossed_swords: | - - :small_blue_diamond: Experienced and Active Team, - - :small_blue_diamond: Good Teamwork. - - :small_blue_diamond: Active Members. - - :small_blue_diamond: No Toxicity. - - :small_blue_diamond: 24/7 VPS. - - :small_blue_diamond: Custom Discord Bots. - - :small_blue_diamond: Payouts Split Fairly. - - :small_blue_diamond: Custom Clients | - - :small_orange_diamond: Must be over 13 years old. - - :small_orange_diamond: Must have a Microphone. - - :small_orange_diamond: Must be able to play 2-3+ hours per day. - - :small_orange_diamond: Must have past SkyBlock experience. - - :small_orange_diamond: must have Schematica. - - :small_orange_diamond: Must have good teamwork. | https://discord.gg/KWBh9MN"
 
 
-registerChannel("703933487622651994", "705089957974507581", admsg); // demolitionMC
-registerChannel("575657452712755200", "699232376836063232", admsg); // enderprison
-registerChannel("637681021126574090", "696533246464229506", admsg); // JailsMC
-registerChannel("683340545304821791", "687345916583084078", admsg); // Blockcentral
-registerChannel("687815947402084417", "687837711352332317", admsg); // mcbattles
-registerChannel("444258898011095060", "589759738401652737", admsg); // Pulsepvp
-registerChannel("514574611069927458", "648768296786591746", admsg); // mythonia
-registerChannel("514574611069927458", "670686125177831495", admsg); // mythonia
-registerChannel("514574611069927458", "670686162427576341", admsg); // mythonia
-registerChannel("698673961483108353", "698683702535782530", admsg); // azraelmc
-registerChannel("692809364314128394", "692818404620501053", admsg); // chaoscraft
-registerChannel("704886894864891934", "704903665445765171", admsg); // atlantismc
-registerChannel("703395751488782377", "703718719687491625", admsg); // immunitymc
-registerChannel("587715966574788608", "703824223357108314", admsg); // jungleMC
-registerChannel("707049826470199427", "712183709411049492", admsg); // mynetale
-registerChannel("696757944078958612", "697372571644985454", admsg); // oracalepvp
-registerChannel("339203731486933004", "597459427079094356", admsg); // saicopvp
-registerChannel("703406504119763016", "706962314431037440", admsg); // starcade
-registerChannel("685749547120459837", "699352212421214229", admsg); // tornadoMC
-registerChannel("248822834317492245", "473623564218662913", admsg); // Archonpvp
-registerChannel("248822834317492245", "528659708299706368", admsg); // Archonpvp
-registerChannel("660193933284081683", "660640702375526401", admsg); // spacemc
-registerChannel("706646870620897300", "711616609273511947", admsg); // skyages
+
 registerChannel("710594387448692819", "712419979026497677", admsg); // unitymc
 
 
