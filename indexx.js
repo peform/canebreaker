@@ -48,6 +48,9 @@ registerChannel("703406504119763016", "706962314431037440", admsg); // starcade
 registerChannel("685749547120459837", "699352212421214229", admsg); // tornadoMC
 registerChannel("248822834317492245", "473623564218662913", admsg); // Archonpvp
 registerChannel("248822834317492245", "528659708299706368", admsg); // Archonpvp
+registerChannel("660193933284081683", "660640702375526401", admsg); // spacemc
+registerChannel("706646870620897300", "711616609273511947", admsg); // skyages
+registerChannel("710594387448692819", "712419979026497677", admsg); // unitymc
 
 
 
